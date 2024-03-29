@@ -1,0 +1,9 @@
+save_dir: results
+datasets: ["dota2"]
+methods: ["banditpam"]
+params:
+    banditpam:
+        max_iter: [0]
+K: [3]
+N: null
+seeds: [0]
