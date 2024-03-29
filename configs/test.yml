@@ -1,0 +1,21 @@
+save_dir: results_test
+datasets: ["mnist"]
+methods: ["greedy", "pam", "onebatch"]
+params:
+    onebatch:
+        batch_size: [100, 300, 500, 1000]
+    fastclara:
+        n_sampling_iter: [5, 50]
+    clara:
+        n_sampling_iter: [5, 50]
+    kmeans++ls:
+        Z: [5, 10]
+    kmc2:
+        chain_length: [20, 100, 200]
+    pam:
+        method: ["alternate", "fastermsc", "fasterpam", "fastmsc", "fastpam1", "pam", "pammedsil"]
+    greedy:
+        optimizer: ["lazy", "approximate-lazy", "modular", "naive", "two-stage", "two-stage", "stochastic", "sample"]
+K: [10]
+N: [5000]
+seeds: [0]
