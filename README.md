@@ -17,7 +17,7 @@ To reproduce the experiements, please download the datasets and unzip them in a 
 ## Competitors
 
 The following competitors are considered:
- - Random: Select uniformly at random
+ - Random: Select medoids uniformly at random
  - [KMC2](https://ojs.aaai.org/index.php/AAAI/article/view/10259/10118): "Approximate k-means++ in sublinear time". The chain length parameter is taken in [20, 100, 200]
  - [KMeans++](https://theory.stanford.edu/~sergei/papers/kMeansPP-soda.pdf) "k-means++: The Advantages of Careful Seeding"
  - [LS-KMeans++](https://proceedings.mlr.press/v97/lattanzi19a/lattanzi19a.pdf) "A better k-means++ algorithm via local search". The number of local search loops is taken in [5, 10]
@@ -26,7 +26,51 @@ The following competitors are considered:
 
 ## Results Summary
 
-## Plots
+This section presents the summary of the results. Relative Time (RT) and Delta Relative Objective ($\\Delta$RO), averaged over the results for $K = [10, 50, 100]$, are reported in the following tables. The Relative Time and the Delta Relative Objective are respectively defined as follows:
+
+$$ \\text{RT}(A) = T(A) / T(A^*) $$
+
+$$ \\Delta\\text{RO}(A) = \\text{Obj}(A) / \\text{Obj}(A^*) - 1$$
+
+Where $T(A)$ and $\\text{Obj}(A)$ are respectively the computational time and the objective of algorithm $A$, and $A^*$ is the algorithm of lowest objective.
+
+### Average Delta RO
+| method         |   covertype |   dota2 |   monitor_gas |   optical_radar |   phishing |
+|:---------------|------------:|--------:|--------------:|----------------:|-----------:|
+| Random         |        40   |     2.8 |          21.2 |            17.6 |       18.7 |
+| KMC2-20        |        27.5 |     2.7 |          17.5 |            18.5 |       20.8 |
+| KMC2-100       |        26.3 |     2.7 |          17.4 |            18.1 |       21.8 |
+| KMC2-200       |        29.4 |     2.7 |          18.3 |            18.3 |       20.4 |
+| KMeans++       |        27.9 |     2.7 |          20.3 |            17.5 |       22.1 |
+| LS-KMeans++-5  |        22.2 |     2.4 |          15.9 |            15   |       19.1 |
+| LS-KMeans++-10 |        19.1 |     2.2 |          12.5 |            13.5 |       16.9 |
+| FastCLARA-5    |         8.5 |     1.6 |           4.2 |             8.3 |        4.9 |
+| FastCLARA-50   |         6.2 |     1.4 |           3   |             7.1 |        4   |
+| OneBatch-100   |        24.6 |     1.3 |          12.5 |             7.9 |       11.2 |
+| OneBatch-300   |         8.5 |     0.7 |           4.7 |             3.1 |        4.6 |
+| OneBatch-500   |         3.1 |     0.4 |           2.3 |             1.6 |        2.2 |
+| OneBatch-1000  |         0   |     0   |           0.1 |             0   |        0   |
+
+### Average RT
+| method         |   covertype |   dota2 |   monitor_gas |   optical_radar |   phishing |
+|:---------------|------------:|--------:|--------------:|----------------:|-----------:|
+| Random         |         0   |     0   |           0   |             0.1 |        0.1 |
+| KMC2-20        |         0.7 |     4.3 |           1.2 |             2.1 |        1.5 |
+| KMC2-100       |         3.4 |    24.1 |           5.7 |            10   |        8.2 |
+| KMC2-200       |         7.9 |    49.7 |          12.4 |            19.9 |       16.7 |
+| KMeans++       |        16.4 |    35.9 |          12.3 |            96   |       16.2 |
+| LS-KMeans++-5  |        85.3 |    72.6 |          94.8 |           175.9 |       83.5 |
+| LS-KMeans++-10 |       152.1 |   113.8 |         177.8 |           258.3 |      133.2 |
+| FastCLARA-5    |        18.2 |    17.3 |          11.4 |            40.2 |       15.3 |
+| FastCLARA-50   |       179.9 |   151   |         113.2 |           397.5 |      151.7 |
+| OneBatch-100   |        13   |    14   |          14.5 |            18   |       16.5 |
+| OneBatch-300   |        29.6 |    39.4 |          39.8 |            39.1 |       44.8 |
+| OneBatch-500   |        48.9 |    59.2 |          65.9 |            51.1 |       66.9 |
+| OneBatch-1000  |       100   |   100   |         135   |           100   |      132.8 |
+
+## Detailed Results
+
+
 
 ![plot](/figures/dota2_100_time_vs_obj.png) 
 
