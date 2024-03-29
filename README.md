@@ -103,3 +103,22 @@ The following figures present a visualization of the pairs ($T(A)$, Obj$(A)$) fo
 ![plot](/figures/covertype_10_time_vs_obj.png) 
 
 ![plot](/figures/covertype_100_time_vs_obj.png)
+
+
+## Testing Assumptions
+
+This section provides the test for the three assumptions required to derive the OneBatch time complexity. $G_{m_k}$ is the gain row of the selected medoid at step $k$. The "Col sparisty ratio" in red is the mean sparisty of the columns of $G$ with non null value in the $m_k$ row. We observe that for all datasets, the three sparsity ratios are below $1/k$. The assumptions are then verfied for these datasets. The results can be reproduce through the ``Sparsity.ipynb`` notebook.
+
+![plot](/figures/sparsity_mnist.png)
+
+![plot](/figures/sparsity_cifar.png) 
+
+![plot](/figures/sparsity_dota2.png) 
+
+![plot](/figures/sparsity_phishing.png) 
+
+![plot](/figures/sparsity_optical_radar.png) 
+
+![plot](/figures/sparsity_monitor_gas.png) 
+
+![plot](/figures/sparsity_covertype.png) 
