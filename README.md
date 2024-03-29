@@ -70,8 +70,36 @@ Where $T(A)$ and $\\text{Obj}(A)$ are respectively the computational time and th
 
 ## Detailed Results
 
+![plot](/figures/dota2_rt_ro.png)
 
+![plot](/figures/phishing_rt_ro.png)
 
-![plot](/figures/dota2_100_time_vs_obj.png) 
+![plot](/figures/optical_radar_rt_ro.png)
+
+![plot](/figures/monitor_gas_rt_ro.png)
+
+![plot](/figures/covertype_rt_ro.png)
+
+## Time vs Objective
+
+The following figures present a visualization of the pairs ($T(A)$, Obj$(A)$) for eash algorithm $A$ in 2D graphics. The red line is the Pareto front. Each method belonging to the Pareto front is the best method for at least one Time vs Obj trade-off.
+
+![plot](/figures/dota2_10_time_vs_obj.png) 
 
 ![plot](/figures/dota2_100_time_vs_obj.png)
+
+![plot](/figures/phishing_10_time_vs_obj.png) 
+
+![plot](/figures/phishing_100_time_vs_obj.png)
+
+![plot](/figures/optical_radar_10_time_vs_obj.png) 
+
+![plot](/figures/optical_radar_100_time_vs_obj.png)
+
+![plot](/figures/monitor_gas_10_time_vs_obj.png) 
+
+![plot](/figures/monitor_gas_100_time_vs_obj.png)
+
+![plot](/figures/covertype_10_time_vs_obj.png) 
+
+![plot](/figures/covertype_100_time_vs_obj.png)
