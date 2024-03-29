@@ -82,7 +82,7 @@ Where $T(A)$ and $\\text{Obj}(A)$ are respectively the computational time and th
 
 ## Time vs Objective
 
-The following figures present a visualization of the pairs ($T(A)$, Obj$(A)$) for eash algorithm $A$ in 2D graphics. The red line is the Pareto front. Each method belonging to the Pareto front is the best method for at least one Time vs Obj trade-off.
+The following figures present a visualization of the pairs ($T(A)$, Obj($A$)) for each algorithm $A$ in 2D graphics. The red line is the Pareto front. Each method belonging to the Pareto front is the best method for at least one Time vs Obj trade-off.
 
 ![plot](/figures/dota2_10_time_vs_obj.png) 
 
