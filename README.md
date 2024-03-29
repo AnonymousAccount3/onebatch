@@ -2,6 +2,15 @@
 
 This repository provides the results of the experiements conducted on several UCI datasets.
 
+Please clone the repository and install the dependencies with:
+```
+pip install -r requirements.txt
+```
+To run the experiments for the config file `configs/test.yml` use the following command line:
+```
+python script.py --config test
+```
+
 ## Datasets
 
 The five following datasets are used:
