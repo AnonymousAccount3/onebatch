@@ -24,4 +24,4 @@ threadpoolctl==3.1.0
 tqdm==4.65.0
 tzdata==2023.3
 scikit-learn-extra==0.3.0
-banditpam
+banditpam==4.0.4
