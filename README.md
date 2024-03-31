@@ -44,7 +44,7 @@ $$ \\Delta\\text{RO}(A) = \\text{Obj}(A) / \\text{Obj}(A^*) - 1$$
 
 Where $T(A)$ and $\\text{Obj}(A)$ are respectively the computational time and the objective of algorithm $A$, and $A^*$ is the algorithm of lowest objective.
 
-Note: BanditPAM++ is not included in the summary as it reaches the limit of computational time for $K$ in [50, 100]. (See Detailed Results below).
+Note: BanditPAM++ is not included in the summary as it reaches the limit of computational time for $K$ in [50, 100]. ([See Detailed Results below](https://github.com/AnonymousAccount3/onebatch/tree/main?tab=readme-ov-file#detailed-results)).
 
 ### Average Delta RO
 | method         |   covertype |   dota2 |   monitor_gas |   optical_radar |   phishing |
