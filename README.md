@@ -6,9 +6,9 @@ Please clone the repository and install the dependencies with:
 ```
 pip install -r requirements.txt
 ```
-To run the experiments for the config file `configs/test.yml` use the following command line:
+To run the experiments for the config file `configs/expe_large_scale.yml` use the following command line:
 ```
-python script.py --config test
+python script.py --config expe_large_scale
 ```
 
 ## Datasets
