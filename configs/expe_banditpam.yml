@@ -1,9 +1,0 @@
-save_dir: results_all
-datasets: ["dota2", "phishing", "optical_radar", "monitor_gas", "covertype"]
-methods: ["banditpam"]
-params:
-    banditpam:
-        max_iter: [0, 2, 5]
-K: [10, 50, 100]
-N: null
-seeds: [0, 1, 2, 3, 4]
