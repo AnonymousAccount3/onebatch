@@ -31,6 +31,7 @@ The following competitors are considered:
  - [KMeans++](https://theory.stanford.edu/~sergei/papers/kMeansPP-soda.pdf) "k-means++: The Advantages of Careful Seeding"
  - [LS-KMeans++](https://proceedings.mlr.press/v97/lattanzi19a/lattanzi19a.pdf) "A better k-means++ algorithm via local search". The number of local search loops is taken in [5, 10]
  - [FastCLARA](https://www.sciencedirect.com/science/article/pii/S0306437921000557) "Fast and eager medoids clustering: runtime improvement of the PAM, CLARA, and CLARANS algorithms". The number of iteration is taken in [5, 50]
+ - [BanditPAM++](https://arxiv.org/abs/2310.18844) "BanditPAM++: Faster k-medoids Clustering". The number of SWAP iteration is taken in [0, 2, 5]
  - OneBatch: The batch size is taken in [100, 300, 500, 1000]
 
 ## Results Summary
@@ -42,6 +43,8 @@ $$ \\text{RT}(A) = T(A) / T(A^*) $$
 $$ \\Delta\\text{RO}(A) = \\text{Obj}(A) / \\text{Obj}(A^*) - 1$$
 
 Where $T(A)$ and $\\text{Obj}(A)$ are respectively the computational time and the objective of algorithm $A$, and $A^*$ is the algorithm of lowest objective.
+
+Note: BanditPAM++ is not included in the summary as it reaches the limit of computational time for $K$ in [50, 100]. (See Detailed Results below).
 
 ### Average Delta RO
 | method         |   covertype |   dota2 |   monitor_gas |   optical_radar |   phishing |
