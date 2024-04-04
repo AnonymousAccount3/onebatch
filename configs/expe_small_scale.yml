@@ -1,0 +1,21 @@
+save_dir: results
+datasets: ["wine", "abalone", "bankruptcy", "letter", "drybean"]
+methods: ["random", "onebatch", "pam", "greedy", "fastclara", "kmeans++", "kmeans++ls", "kmc2"]
+params:
+    onebatch:
+        batch_size: [100, 300, 500, 1000]
+    fastclara:
+        n_sampling_iter: [5, 50]
+    clara:
+        n_sampling_iter: [5, 50]
+    kmeans++ls:
+        Z: [5, 10]
+    kmc2:
+        chain_length: [20, 100, 200]
+    pam:
+        method: ["alternate", "fasterpam", "fastpam1"]
+    greedy:
+        optimizer: ["lazy", "naive", "sample"]
+K: [10, 50, 100]
+N: null
+seeds: [0, 1, 2, 3, 4]
