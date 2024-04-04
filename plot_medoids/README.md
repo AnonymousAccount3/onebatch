@@ -4,4 +4,20 @@ This sub-directory provides the visualization of the selected medoids by OneBatc
 
 ## MNIST
 
+![plot](/figures/onebatch_mnist_K10.png)
+
+![plot](/figures/fasterpam_mnist_K10.png)
+
+![plot](/figures/onebatch_mnist_K100.png)
+
+![plot](/figures/fasterpam_mnist_K100.png)
+
 ## CIFAR10
+
+![plot](/figures/onebatch_cifar_K10.png)
+
+![plot](/figures/fasterpam_cifar_K10.png)
+
+![plot](/figures/onebatch_cifar_K100.png)
+
+![plot](/figures/fasterpam_cifar_K100.png)
