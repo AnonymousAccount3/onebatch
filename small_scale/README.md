@@ -88,55 +88,51 @@ Where $T(A)$ and $\\text{Obj}(A)$ are respectively the computational time and th
 
 ## Detailed Results
 
-![plot](/figures/dota2_rt_ro.png)
+![plot](/figures/abalone_rt_ro.png)
 
-![plot](/figures/phishing_rt_ro.png)
+![plot](/figures/wine_rt_ro.png)
 
-![plot](/figures/optical_radar_rt_ro.png)
+![plot](/figures/bankruptcy_rt_ro.png)
 
-![plot](/figures/monitor_gas_rt_ro.png)
+![plot](/figures/drybean_rt_ro.png)
 
-![plot](/figures/covertype_rt_ro.png)
+![plot](/figures/letter_rt_ro.png)
 
 ## Time vs Objective
 
 The following figures present a visualization of the pairs ($T(A)$, Obj($A$)) for each algorithm $A$ in 2D graphics. The red line is the Pareto front. Each method belonging to the Pareto front is the best method for at least one Time vs Obj trade-off.
 
-![plot](/figures/dota2_10_time_vs_obj.png) 
+![plot](/figures/abalone_10_time_vs_obj.png) 
 
-![plot](/figures/dota2_100_time_vs_obj.png)
+![plot](/figures/abalone_100_time_vs_obj.png)
 
-![plot](/figures/phishing_10_time_vs_obj.png) 
+![plot](/figures/wine_10_time_vs_obj.png) 
 
-![plot](/figures/phishing_100_time_vs_obj.png)
+![plot](/figures/wine_100_time_vs_obj.png)
 
-![plot](/figures/optical_radar_10_time_vs_obj.png) 
+![plot](/figures/bankruptcy_10_time_vs_obj.png) 
 
-![plot](/figures/optical_radar_100_time_vs_obj.png)
+![plot](/figures/bankruptcy_100_time_vs_obj.png)
 
-![plot](/figures/monitor_gas_10_time_vs_obj.png) 
+![plot](/figures/drybean_10_time_vs_obj.png) 
 
-![plot](/figures/monitor_gas_100_time_vs_obj.png)
+![plot](/figures/drybean_100_time_vs_obj.png)
 
-![plot](/figures/covertype_10_time_vs_obj.png) 
+![plot](/figures/letter_10_time_vs_obj.png) 
 
-![plot](/figures/covertype_100_time_vs_obj.png)
+![plot](/figures/letter_100_time_vs_obj.png)
 
 
 ## Testing Assumptions
 
 This section provides the test for the three assumptions required to derive the OneBatch time complexity. $G_{m_k}$ is the gain row of the selected medoid at step $k$. The "Col sparisty ratio" in red is the mean sparisty of the columns of $G$ with non null value in the $m_k$ row. We observe that for all datasets, the three sparsity ratios are below $1/k$. The assumptions are then verfied for these datasets. The results can be reproduce through the ``Sparsity.ipynb`` notebook.
 
-![plot](/figures/sparsity_mnist.png)
+![plot](/figures/sparsity_abalone.png) 
 
-![plot](/figures/sparsity_cifar.png) 
+![plot](/figures/sparsity_wine.png) 
 
-![plot](/figures/sparsity_dota2.png) 
+![plot](/figures/sparsity_bankruptcy.png) 
 
-![plot](/figures/sparsity_phishing.png) 
+![plot](/figures/sparsity_drybean.png) 
 
-![plot](/figures/sparsity_optical_radar.png) 
-
-![plot](/figures/sparsity_monitor_gas.png) 
-
-![plot](/figures/sparsity_covertype.png) 
+![plot](/figures/sparsity_letter.png) 
