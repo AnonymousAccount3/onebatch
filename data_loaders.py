@@ -77,12 +77,57 @@ def load_covertype():
     X /= (np.abs(X).max(0, keepdims=True) + EPS)
     return X
 
+def load_drybean():
+    name = "dry+bean+dataset/DryBeanDataset/Dry_Bean_Dataset.xlsx"
+    path = os.path.join(folder, name)
+    df = pd.read_excel(path).select_dtypes(include=numerics)
+    X = df.values.astype(np.float32)
+    X /= (np.abs(X).max(0, keepdims=True) + EPS)
+    return X
+
+def load_wine():
+    name = "wine+quality/winequality-white.csv"
+    path = os.path.join(folder, name)
+    df = pd.read_csv(path, delimiter=";")
+    X = df.values.astype(np.float32)
+    X /= (np.abs(X).max(0, keepdims=True) + EPS)
+    return X
+
+def load_abalone():
+    name = "abalone/abalone.data"
+    path = os.path.join(folder, name)
+    df = pd.read_csv(path).select_dtypes(include=numerics)
+    X = df.values.astype(np.float32)
+    X /= (np.abs(X).max(0, keepdims=True) + EPS)
+    return X
+
+def load_bankruptcy():
+    name = "taiwanese+bankruptcy+prediction/data.csv"
+    path = os.path.join(folder, name)
+    df = pd.read_csv(path).select_dtypes(include=numerics)
+    X = df.values.astype(np.float32)
+    X /= (np.abs(X).max(0, keepdims=True) + EPS)
+    return X
+
+def load_letter():
+    name = "letter+recognition/letter-recognition.data"
+    path = os.path.join(folder, name)
+    df = pd.read_csv(path).select_dtypes(include=numerics)
+    X = df.values.astype(np.float32)
+    X /= (np.abs(X).max(0, keepdims=True) + EPS)
+    return X
+
 datasets_dict = dict(
     dota2 = load_dota2,
     phishing = load_phishing,
     optical_radar = load_optical_radar,
     monitor_gas = load_monitor_gas,
     covertype = load_covertype,
+    drybean = load_drybean,
+    wine = load_wine,
+    abalone = load_abalone,
+    bankruptcy = load_bankruptcy,
+    letter = load_letter,
 )
 
 def load_data(dataset, seed, n):
