@@ -27,6 +27,7 @@ The following competitors are considered:
  - [LS-KMeans++](https://proceedings.mlr.press/v97/lattanzi19a/lattanzi19a.pdf) "A better k-means++ algorithm via local search". The number of local search loops is taken in [5, 10]
  - [FastCLARA](https://www.sciencedirect.com/science/article/pii/S0306437921000557) "Fast and eager medoids clustering: runtime improvement of the PAM, CLARA, and CLARANS algorithms". The number of iteration is taken in [5, 50]
  - [PAM variants](https://www.sciencedirect.com/science/article/pii/S0306437921000557) "Fast and eager medoids clustering: runtime improvement of the PAM, CLARA, and CLARANS algorithms". The implementation of the methods is provided in the following Python library: [kmedoids](https://github.com/kno10/python-kmedoids). The following variants are considered [[fastpam1](https://python-kmedoids.readthedocs.io/en/latest/#fastpam1), [fasterpam](https://python-kmedoids.readthedocs.io/en/latest/#fasterpam), [alternate](https://python-kmedoids.readthedocs.io/en/latest/#alternating-k-medoids-k-means-style)]
+ - [BanditPAM++](https://arxiv.org/abs/2310.18844) "BanditPAM++: Faster k-medoids Clustering". The number of SWAP iteration is taken in [0, 2, 5]
  - **Greedy variants**: The implementation of the methods is provided in the following Python library: [apricot](https://github.com/jmschrei/apricot). The following variants are considered [[naive](https://apricot-select.readthedocs.io/en/latest/optimizers/naive.html), [lazy](https://apricot-select.readthedocs.io/en/latest/optimizers/lazy.html), [sample](https://apricot-select.readthedocs.io/en/latest/optimizers/sample.html)]
  - **OneBatch**: The batch size is taken in [100, 300, 500, 1000]
 
@@ -93,6 +94,8 @@ Where $T(A)$ and $\\text{Obj}(A)$ are respectively the computational time and th
 | OneBatch-1000  |      69.1 |         27.3 |      19.6 |     10.1 |    66.3 |
 
 ## Detailed Results
+
+Note: for a better visualization, RT and Delta RO values are respectively "clipped" at 500% and 30%.
 
 ![plot](/figures/abalone_rt_ro.png)
 
