@@ -25,3 +25,5 @@ tqdm==4.65.0
 tzdata==2023.3
 scikit-learn-extra==0.3.0
 banditpam==4.0.4
+openpyxl==3.1.2
+xlrd==2.0.1
