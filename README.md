@@ -82,6 +82,8 @@ Note: BanditPAM++ is not included in the summary as it reaches the limit of comp
 
 ## Detailed Results
 
+Note: for a better visualization, RT and Delta RO values are respectively "clipped" at 500% and 30%.
+
 ![plot](/figures/dota2_rt_ro.png)
 
 ![plot](/figures/phishing_rt_ro.png)
