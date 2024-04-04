@@ -17,5 +17,5 @@ params:
     greedy:
         optimizer: ["lazy", "approximate-lazy", "modular", "naive", "two-stage", "two-stage", "stochastic", "sample"]
 K: [10, 50, 100]
-N: none
+N: null
 seeds: [0]
