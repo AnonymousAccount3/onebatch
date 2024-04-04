@@ -1,6 +1,6 @@
 save_dir: results
 datasets: ["wine", "abalone", "bankruptcy", "letter", "drybean"]
-methods: ["random", "onebatch", "pam", "greedy", "fastclara", "kmeans++", "kmeans++ls", "kmc2"]
+methods: ["random", "onebatch", "pam", "greedy", "fastclara", "kmeans++", "kmeans++ls", "kmc2", "banditpam"]
 params:
     onebatch:
         batch_size: [100, 300, 500, 1000]
@@ -16,6 +16,8 @@ params:
         method: ["alternate", "fasterpam", "fastpam1"]
     greedy:
         optimizer: ["lazy", "naive", "sample"]
+    banditpam:
+        max_iter: [0, 2, 5]
 K: [10, 50, 100]
 N: null
 seeds: [0, 1, 2, 3, 4]
